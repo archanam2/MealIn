@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link  href="css/screen.css" media="screen" rel="stylesheet"/>
+<link  href="css/style.css" media="screen" rel="stylesheet"/>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div id="header_wrapper">
+	<header class="container">
+        <img src="images/Logo.jpg" height="70px" width="90px"class="left" style="padding-top: 0px;"  alt="" />
+		<h1 class="span-6">Meal Magic</h1>
+		
+<!--################################################-->
+		<nav class="span-14 last right">
+			<ul class="right">
+				<li class="active"><a class="p_text_color" href="index.html">Home</a></li>
+				
+                <li><a href="Restaurant.aspx">Restaurants</a></li>
+                <li><a href="mypro.aspx">Menus</a></li>
+				<li><a href="AddTocart.aspx">Cart</a></li>
+				<li><a href="Login.aspx">Login</a></li>
+                <li><a href="Contact.aspx">Contact Us</a></li></br>
+                <li><asp:Label ID="Label1" runat="server" Text=""></asp:Label></li>
+			</ul>
+		</nav>
+
+	</header>
+</div>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <!--################################################-->
+	<footer class="Common_footer">
+        
+        <div class="isolate" />
+        
+        <h4 style="margin-Left: 600px;" class="heading">
+          We Deliver TO
+        </h4>
+        <div class="Row1">
+          <ul class="lists">
+            <li>Akola</li>
+            <li>Amravati</li>
+            <li>Aurangabad</li>
+            <li>Baramati</li>
+            <li>Beed</li>
+            <li>Barshi</li>
+            <li>Bikaner</li>
+          </ul>
+          <ul class="lists">
+            <li>Bandra</li>
+            <li>Dhule</li>
+            <li>Gurgaon</li>
+            <li>Ichalkaranji</li>
+            <li>Indore</li>
+            <li>Islampur</li>
+            <li>Jabalpur</li>
+          </ul>
+          <ul class="lists">
+            <li>Jalgaon</li>
+            <li>Jaysingpur</li>
+            <li>Kolhapur</li>
+            <li>Karad</li>
+            <li>Karnataka</li>
+            <li>Karnataka</li>
+            <li>Latur</li>
+          </ul>
+          <ul class="lists">
+            <li>Lonavala</li>
+            <li>Mumbai</li>
+            <li>Nagpur</li>
+            <li>Nashik</li>
+            <li>Pune</li>
+            <li>Raigad</li>
+            <li>Sangli</li>
+          </ul>
+        </div>
+        <div class="isolate" />
+        <div class="Row2">
+          <div class="footerCompany">
+            <img src="images/Logo.jpg" class="logo" alt="LOGO" width="100" />
+
+            <h5>__Meal Magic__</h5>
+          </div>
+          <div class="footercopyRights">
+            <i>&copy;2020_Meal Magic_: All Rights are reserved</i>
+          </div>
+          
+        </div>
+      </footer>
+
+</body>
+</html>
